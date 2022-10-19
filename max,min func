@@ -1,0 +1,10 @@
+def high_and_low(numbers):
+    num = []
+    string = ''
+    s = numbers.split()
+    for i in s:
+        num.append(int(i))
+    string += str(max(num))
+    string += ' '
+    string += str(min(num))
+    return string
