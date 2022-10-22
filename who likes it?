@@ -1,0 +1,16 @@
+def likes(names):
+    likes = ''
+    if len(names) == 0:
+        likes = "no one likes this"
+    elif len(names) == 1:
+        likes = f"{names[0]} likes this"
+    elif len(names) == 2:
+        likes = f'{names[0]} and {names[1]} like this'
+    elif len(names) == 3:
+        likes = f'{names[0]}, {names[1]} and {names[2]} like this'
+    else:
+        count = -2
+        for i in names:
+            count += 1
+        likes = f'{names[0]}, {names[1]} and {count} others like this'
+    return likes
