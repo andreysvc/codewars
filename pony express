@@ -1,0 +1,10 @@
+def riders(stations):
+    count_r = 1
+    miles = 0
+    for i in stations:
+        if miles + i > 100:
+            count_r += 1
+            miles = i
+        else:
+            miles += i
+    return count_r
